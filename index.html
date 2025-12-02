@@ -57,73 +57,73 @@
         <section class="filter-section">
             <h3>filter section</h3>
 
-            <button class="filter-button btn btn-tertiary" popovertarget="filters" aria-label="Open filters" aria-expanded="false">
+            <button class="filter-button btn btn-tertiary" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-adjustments-alt"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8h4v4h-4z" /><path d="M6 4l0 4" /><path d="M6 12l0 8" /><path d="M10 14h4v4h-4z" /><path d="M12 4l0 10" /><path d="M12 18l0 2" /><path d="M16 5h4v4h-4z" /><path d="M18 4l0 1" /><path d="M18 9l0 11" /></svg>
                 Filters
             </button>
 
-            <form role="dialog" id="filters" popover="inline" aria-label="Selecteer hieronder alle gewenste filters" class="filter-section" action="/filter-experiments"> <!--aria-label overbodig?-->
-                <button class="btn btn-tertiary" popovertarget="filters" popovertargetaction="hide" aria-label="Close filters" aria-expanded="false">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-                    Close Filters
-                </button>
+            <form class="filter-section">
 
-                <button aria-label="knop om alle geselecteerde filters weg te halen" type="reset">Clear all</button>
-                <hr>
-                <fieldset aria-label="Selecteer het type uitwerking">
+                <fieldset aria-label="Selecteer het type uitvoering">
                     <legend>Uitvoering</legend>
 
-                        <input type="checkbox" id="concept" name="Execution" value="concept">
-                        <label for="concept">Concept</label><br>
+                    <input type="checkbox" id="conceptfase" name="Execution" value="conceptfase">
+                    <label for="conceptfase">Conceptfase</label>
 
-                        <input type="checkbox" id="experiment" name="Execution" value="experiment">
-                        <label for="experiment">Experiment</label><br>
+                    <input type="checkbox" id="experimenteerfase" name="Execution" value="experimenteerfase">
+                    <label for="experimenteerfase">Experimenteerfase</label>
 
-                        <input type="checkbox" id="methode" name="Execution" value="methode">
-                        <label for="methode">Methode</label><br>
-                    </fieldset>
+                    <input type="checkbox" id="methodefase" name="Execution" value="methodefase">
+                    <label for="methodefase">Methodefase</label>
+                </fieldset>
 
                 <fieldset aria-label="Selecteer het participatieniveau">
                     <legend>Participation level</legend>
 
                     <input type="checkbox" id="transparency" name="Participationlevel" value="transparency">
-                    <label for="transparency">Transparantie</label><br>
+                    <label for="transparency">Transparant</label>
 
-                    <input type="checkbox" id="actionable" name="Participationlevel" value="actionable">
-                    <label for="actionable">Toepasbaar</label><br>
+                    <input type="checkbox" id="actiegericht" name="Participationlevel" value="actiegericht">
+                    <label for="actiegericht">actiegericht</label>
 
-                    <input type="checkbox" id="legible" name="Participationlevel" value="legible">
-                    <label for="legible">Leesbaar</label><br>
+                    <input type="checkbox" id="leesbaar" name="Participationlevel" value="leesbaar">
+                    <label for="leesbaar">Leesbaar</label>
 
-                    <input type="checkbox" id="relatable" name="Participationlevel" value="relatable">
-                    <label for="relatable">Herkenbaar</label><br>
+                    <input type="checkbox" id="relateerbaar" name="Participationlevel" value="relateerbaar">
+                    <label for="relateerbaar">Relateerbaar</label>
                     
-                    <input type="checkbox" id="contestable" name="Participationlevel" value="contestable">
-                    <label for="contestable">Betwistbaar</label><br>
+                    <input type="checkbox" id="betwistbaar" name="Participationlevel" value="betwistbaar">
+                    <label for="betwistbaar">Betwistbaar</label>
                 </fieldset>
 
                 <fieldset aria-label="Selecteer de participatiestap">
                     <legend>Processtap</legend>
 
-                    <input type="checkbox" id="evaluating" name="Processstep" value="evaluating">
-                    <label for="evaluating">Evalueren</label><br>
+                    <input type="checkbox" id="evalueren" name="Processstep" value="evalueren">
+                    <label for="evalueren">Evalueren</label>
 
-                    <input type="checkbox" id="deployment" name="Processstep" value="deployment">
-                    <label for="deployment">Implementatie</label><br>
+                    <input type="checkbox" id="implementatie" name="Processstep" value="implementatie">
+                    <label for="implementatie">Implementatie</label>
 
-                    <input type="checkbox" id="articulating" name="Processstep" value="articulating">
-                    <label for="articulating">Articuleren</label><br>
+                    <input type="checkbox" id="articuleren" name="Processstep" value="articuleren">
+                    <label for="articuleren">Articuleren</label>
 
-                    <input type="checkbox" id="making" name="Processstep" value="making">
-                    <label for="making">Maken</label><br>
+                    <input type="checkbox" id="maken" name="Processstep" value="maken">
+                    <label for="maken">Maken</label>
                 </fieldset>
             </form>
+
         </section>
 
         <section class="article-section">
             <h2>Section met artikelen</h2>
 
-            <article>
+            <article id="Open-statistieken-delen"
+                data-processtap="evalueren"
+                data-participatie="transparant"
+                data-uitvoering="conceptfase" 
+                >
+                
                 <figure class="article-image">
                     <img src="./assets/article-img/1.png" alt="">
                 </figure>
@@ -142,7 +142,11 @@
                     </a>
             </article>
 
-            <article>
+            <article id="Chatten-met-de-handhaver"
+                data-processtap="implementatie"
+                data-participatie="actiegericht"
+                data-uitvoering="conceptfase" 
+                >
                 <figure class="article-image">
                     <img src="./assets/article-img/2.png" alt="">
                 </figure>
@@ -161,7 +165,12 @@
                     </a>
             </article>
 
-            <article>
+            <article id="Seintje-bij-het-fotograferen"
+                data-processtap="implementatie"
+                data-participatie="leesbaar"
+                data-uitvoering="experimenteerfase" 
+                >
+
                 <figure class="article-image">
                     <img src="./assets/article-img/3.png" alt="">
                 </figure>
@@ -180,7 +189,11 @@
                     </a>
             </article>
 
-            <article>
+            <article id="Cameradoos-met-vorm-en-richting"
+                data-processtap="implementatie"
+                data-participatie="leesbaar"
+                data-uitvoering="conceptfase" 
+            >
                 <figure class="article-image">
                     <img src="./assets/article-img/4.png" alt="">
                 </figure>
@@ -199,7 +212,11 @@
                     </a>
             </article>
 
-            <article>
+            <article id="Maquette-voor-de-digitale-openbare-ruimte"
+                data-processtap="articuleren"
+                data-participatie="relateerbaar"
+                data-uitvoering="methodefase" 
+            >
                 <figure class="article-image">
                     <img src="./assets/article-img/5.jpg" alt="">
                 </figure>
@@ -218,7 +235,11 @@
                     </a>
             </article>
 
-            <article>
+            <article id="Ga-de-straat-op"
+                data-processtap="maken"
+                data-participatie="actiegericht"
+                data-uitvoering="methodefase" 
+                >
                 <figure class="article-image">
                     <img src="./assets/article-img/6.jpg" alt="">
                 </figure>
@@ -237,7 +258,11 @@
                     </a>
             </article>
 
-            <article>
+            <article id="Waardenkaartjes"
+                data-processtap="articuleren"
+                data-participatie="betwistbaar"
+                data-uitvoering="methodefase" 
+                >
                 <figure class="article-image">
                     <img src="./assets/article-img/7.png" alt="">
                 </figure>
@@ -256,7 +281,11 @@
                     </a>
             </article>
 
-            <article>
+            <article id="Menselijke-maat-bepalen"
+                data-processtap="maken"
+                data-participatie="actiegericht"
+                data-uitvoering="methodefase" 
+                >
                 <figure class="article-image">
                     <img src="./assets/article-img/8.jpg" alt="">
                 </figure>
