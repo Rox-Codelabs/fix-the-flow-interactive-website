@@ -149,7 +149,10 @@ main{
 }
 
 .filter-section{ 
-    display: none;
+    
+    .hidden{
+        display: none;
+    }
 }
 
 .article-section{
