@@ -174,8 +174,12 @@ main{
     background-color: var(--color-text-primary);
 }
 
-.filter-section{ 
+.filter-section-old{ 
     display: none;
+}
+
+.filter-section-new{
+
 }
 
 .article-section{
