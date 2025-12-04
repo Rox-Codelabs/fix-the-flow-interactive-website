@@ -7,6 +7,8 @@ body{
     background-color: var(--color-primary);
 }
 
+.hidden{display: none;}
+
 header{
     background-color: var(--color-secondary);
     padding: 1rem 3.7rem;
@@ -43,10 +45,11 @@ header{
         border: none;
         max-width: 600px;
         overflow: hidden;
+        right: 0;
+        top: 0;
 
         @media (min-width:620px){
             width: 75vw;
-            left: auto;
         }
 
         button{
@@ -149,10 +152,7 @@ main{
 }
 
 .filter-section{ 
-    
-    .hidden{
-        display: none;
-    }
+    display: none;
 }
 
 .article-section{
