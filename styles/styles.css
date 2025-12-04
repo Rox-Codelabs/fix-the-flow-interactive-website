@@ -12,11 +12,6 @@ body{
     visibility: hidden;
     pointer-events: none;
 }
-.not-hidden{
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
 
 header{
     background-color: var(--color-secondary);
@@ -56,10 +51,17 @@ header{
         overflow: hidden;
         right: 0;
         top: 0;
-        
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition: transform 0.3s ease;
+        transform: translateX(0); 
 
         @media (min-width:620px){
             width: 75vw;
+        }
+        &.hidden{
+            transform: translateX(100%);
         }
 
         button{
