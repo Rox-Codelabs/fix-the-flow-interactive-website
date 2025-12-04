@@ -34,6 +34,16 @@ header{
         }
     }
 
+    .logo-text{
+        position: absolute;
+        left: 3rem;
+        top: 1.4rem;
+        font-family: var(--font-family-sans);
+        font-size: var(--font-size-h3);
+        color: var(--color-primary);
+        transition: ease-in 1s;
+    }
+
     button{
         transform: translateY(85%);
         svg{
@@ -60,6 +70,7 @@ header{
         @media (min-width:620px){
             width: 75vw;
         }
+
         &.hidden{
             transform: translateX(100%);
         }
