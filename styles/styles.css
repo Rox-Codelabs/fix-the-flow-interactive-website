@@ -179,7 +179,42 @@ main{
 }
 
 .filter-section-new{
-
+    h2{}
+    .filter-popup{
+        background-color: var(--color-secondary);
+        width: 65vw;
+        aspect-ratio: 4/5;
+        margin: auto;
+        .progress-bar{
+            display: flex;
+            gap: 1rem;
+            padding: 1rem 2rem;
+            .bar{
+                border: 0.2px solid var(--color-primary);
+                background-color: var(--color-secondary);
+                width: 15vw;
+                height: 1.5vh;
+                &.fill{
+                    background-color: var(--color-primary);
+                }
+            }
+        }
+        button.close-filters{}
+        form{
+            background-color: var(--color-text-primary);
+            border: none;
+            padding: 2rem;
+            fieldset{
+                input{}
+                label{}
+            }
+        }
+        button{}
+        .pop-up-1{}
+        .pop-up-2{}
+        .pop-up-3{}
+        .pop-up-4{}
+    }
 }
 
 .article-section{
