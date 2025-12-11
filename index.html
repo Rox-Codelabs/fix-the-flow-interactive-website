@@ -41,8 +41,6 @@
         </nav>
     </header>
 
-    <div class="sentinel"></div>
-
     <section class="hero-section">
         <img src="./assets/article-img/6.jpg" alt="Fietser in de regen die naar een ScanFiets met camera kijkt.">
         <div class="hero-text">
@@ -57,95 +55,95 @@
         </div>
     </section>
 
-    <main>
+    <section class="filter-section">
+        <h2 class="hidden">Hierkun je zoeken naar het artikel dat bij jou past</h2>
+        <button class="btn btn-secondry open-filters">start met filteren</button>
 
-        <section class="filter-section-new">
-            <h2>Hierkun je zoeken naar het artikel dat bij jou past</h2>
-            <button class="btn btn-secondry open-filters">start met filteren</button>
-
-            <section class="filter-popup hidden">
-                <div class="pop-up-top">
-                    <div class="progressbar">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                    <button class="btn-icon close-filters">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-                    </button>
+        <section class="filter-popup hidden">
+            <div class="pop-up-top">
+                <div class="progressbar">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
+                <button class="btn-icon close-filters">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                </button>
+            </div>
 
-                <div class="step-1">
-                    <h1>In deze pop-up kun je filteren</h1>
-                    <p>dsfjkgnsjkdfngjfndhsnfdjkkkkkkkkkkknsnfdjkghfjksnjnghjksnfkjngjh</p>
-                </div>
+            <div class="step-1">
+                <h1>In deze pop-up kun je filteren</h1>
+                <p>dsfjkgnsjkdfngjfndhsnfdjkkkkkkkkkkknsnfdjkghfjksnjnghjksnfkjngjh</p>
+            </div>
 
-                <form>
-                    <fieldset aria-label="Selecteer het type uitvoering" class="step-2">
-                        <legend>Uitvoering</legend>
+            <form>
+                <fieldset aria-label="Selecteer het type uitvoering" class="step-2">
+                    <legend>Uitvoering</legend>
 
-                        <input type="checkbox" id="conceptfase" name="Execution" value="conceptfase">
-                        <label for="conceptfase">Conceptfase</label>
+                    <input type="checkbox" id="conceptfase" name="Execution" value="conceptfase">
+                    <label for="conceptfase">Conceptfase</label>
 
-                        <input type="checkbox" id="experimenteerfase" name="Execution" value="experimenteerfase">
-                        <label for="experimenteerfase">Experimenteerfase</label>
+                    <input type="checkbox" id="experimenteerfase" name="Execution" value="experimenteerfase">
+                    <label for="experimenteerfase">Experimenteerfase</label>
 
-                        <input type="checkbox" id="methodefase" name="Execution" value="methodefase">
-                        <label for="methodefase">Methodefase</label>
-                    </fieldset>
+                    <input type="checkbox" id="methodefase" name="Execution" value="methodefase">
+                    <label for="methodefase">Methodefase</label>
+                </fieldset>
 
-                    <fieldset aria-label="Selecteer het participatieniveau" class="step-3">
-                        <legend>Participation level</legend>
+                <fieldset aria-label="Selecteer het participatieniveau" class="step-3">
+                    <legend>Participation level</legend>
 
-                        <input type="checkbox" id="transparency" name="Participationlevel" value="transparency">
-                        <label for="transparency">Transparant</label>
+                    <input type="checkbox" id="transparency" name="Participationlevel" value="transparency">
+                    <label for="transparency">Transparant</label>
 
-                        <input type="checkbox" id="actiegericht" name="Participationlevel" value="actiegericht">
-                        <label for="actiegericht">actiegericht</label>
+                    <input type="checkbox" id="actiegericht" name="Participationlevel" value="actiegericht">
+                    <label for="actiegericht">actiegericht</label>
 
-                        <input type="checkbox" id="leesbaar" name="Participationlevel" value="leesbaar">
-                        <label for="leesbaar">Leesbaar</label>
+                    <input type="checkbox" id="leesbaar" name="Participationlevel" value="leesbaar">
+                    <label for="leesbaar">Leesbaar</label>
 
-                        <input type="checkbox" id="relateerbaar" name="Participationlevel" value="relateerbaar">
-                        <label for="relateerbaar">Relateerbaar</label>
+                    <input type="checkbox" id="relateerbaar" name="Participationlevel" value="relateerbaar">
+                    <label for="relateerbaar">Relateerbaar</label>
                         
-                        <input type="checkbox" id="betwistbaar" name="Participationlevel" value="betwistbaar">
-                        <label for="betwistbaar">Betwistbaar</label>
-                    </fieldset>
+                    <input type="checkbox" id="betwistbaar" name="Participationlevel" value="betwistbaar">
+                    <label for="betwistbaar">Betwistbaar</label>
+                </fieldset>
 
-                    <fieldset aria-label="Selecteer de participatiestap" class="step-4">
-                        <legend>Processtap</legend>
+                <fieldset aria-label="Selecteer de participatiestap" class="step-4">
+                    <legend>Processtap</legend>
 
-                        <input type="checkbox" id="evalueren" name="Processstep" value="evalueren">
-                        <label for="evalueren">Evalueren</label>
+                    <input type="checkbox" id="evalueren" name="Processstep" value="evalueren">
+                    <label for="evalueren">Evalueren</label>
 
-                        <input type="checkbox" id="implementatie" name="Processstep" value="implementatie">
-                        <label for="implementatie">Implementatie</label>
+                    <input type="checkbox" id="implementatie" name="Processstep" value="implementatie">
+                    <label for="implementatie">Implementatie</label>
 
-                        <input type="checkbox" id="articuleren" name="Processstep" value="articuleren">
-                        <label for="articuleren">Articuleren</label>
+                    <input type="checkbox" id="articuleren" name="Processstep" value="articuleren">
+                    <label for="articuleren">Articuleren</label>
 
-                        <input type="checkbox" id="maken" name="Processstep" value="maken">
-                        <label for="maken">Maken</label>
-                    </fieldset>
-                </form>
+                    <input type="checkbox" id="maken" name="Processstep" value="maken">
+                    <label for="maken">Maken</label>
+                </fieldset>
+            </form>
 
-                <div class="step-5">
-                    <h1>Het is gelukt !</h1>
-                    <p>dsfjkgnsjkdfngjfndhsnfdjkkkkkkkkkkknsnfdjkghfjksnjnghjksnfkjngjh</p>
-                </div>
+            <div class="step-5">
+                <h1>Het is gelukt !</h1>
+                <p>dsfjkgnsjkdfngjfndhsnfdjkkkkkkkkkkknsnfdjkghfjksnjnghjksnfkjngjh</p>
+            </div>
 
-                <div class="pop-up-bottom">
-                    <button class="btn-icon btn-previous">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
-                    </button>
-                    <button class="btn-icon btn-next">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>     
-                    </button>
-                </div>
-            </section>
+            <div class="pop-up-bottom">
+                <button class="btn-icon btn-previous">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
+                </button>
+                <button class="btn-icon btn-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>     
+                </button>
+            </div>
         </section>
+    </section>
+
+    <main>
 
         <section class="article-section">
             <h2>Section met artikelen</h2>

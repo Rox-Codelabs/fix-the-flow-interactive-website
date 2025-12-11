@@ -13,6 +13,18 @@ body{
     pointer-events: none;
 }
 
+.active-step{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: inherit;
+}
+
+.blur{
+    filter: blur(4px);
+    pointer-events: none;
+    user-select: none;
+}
+
 header{
     background-color: var(--color-secondary);
     padding: 1rem 3.7rem;
@@ -174,32 +186,36 @@ main{
     background-color: var(--color-text-primary);
 }
 
-.filter-section-new{
-    h2{}
+.filter-section{
+    position: absolute;
+    z-index: 50;
     .filter-popup{
         background-color: var(--color-secondary);
-        width: 65vw;
-        aspect-ratio: 4/5;
-        margin: auto;
-        .progressbar{
-            display: flex;
-            gap: 1rem;
-            padding: 1rem 2rem;
-            .bar{
-                border: 0.2px solid var(--color-primary);
-                background-color: var(--color-secondary);
-                width: 15vw;
-                height: 1.5vh;
-                &.fill{
-                    background-color: var(--color-primary);
+        padding: 3rem;
+
+        .pop-up-top{
+            .progressbar{
+                display: flex;
+                gap: 1rem;
+                padding: 1rem 2rem;
+                .bar{
+                    border: 0.2px solid var(--color-primary);
+                    background-color: var(--color-secondary);
+                    width: 15vw;
+                    height: 1.5vh;
+                    &.fill{
+                        background-color: var(--color-primary);
+                    }
                 }
             }
+            button.close-filters{
+                position: absolute;
+                right: 1rem;
+            }
         }
-        button.close-filters{}
         form{
             background-color: var(--color-text-primary);
             border: none;
-            padding: 2rem;
             fieldset{
                 input{}
                 label{}

@@ -72,13 +72,20 @@ const openFilters = document.querySelector('.open-filters');
 const popUp = document.querySelector('.filter-popup');
 const closeFilters = document.querySelector('.close-filters');
 
+//---
+const backgroundElements = document.querySelectorAll('.hero-section, main, .open-filters');
+//---
+
 openFilters.addEventListener('click', function() {
     popUp.classList.remove('hidden');
+    backgroundElements.forEach(el => el.classList.add('blur'));
 });
 
 closeFilters.addEventListener('click', function() {
     popUp.classList.add('hidden');
+    backgroundElements.forEach(el => el.classList.remove('blur'));
 });
+
 
 
 
@@ -134,4 +141,6 @@ previousBtn.addEventListener('click', () => {
 });
 
 showStep(currentStep);
+
+
 
