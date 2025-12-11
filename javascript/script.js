@@ -104,15 +104,16 @@ const previousBtn = document.querySelector('.btn-previous');
 
 let currentStep = 1;
 
-//array 
 const allSteps = [stepOne, stepTwo, stepThree, stepFour, stepFive];
 
-//Stap 2:
+// stap 2:
+
 function showStep(stepIndex){
 
     allSteps.forEach(stepGroup => {
         stepGroup.forEach(el => {
             el.classList.add('hidden');
+            el.classList.add('fill');
             el.classList.remove('active-step');
         });
     });
@@ -123,8 +124,6 @@ function showStep(stepIndex){
     });
 
 }
-
-//stap 3:
 
 nextBtn.addEventListener('click', () => {
     if (currentStep < allSteps.length) {
@@ -144,3 +143,4 @@ showStep(currentStep);
 
 
 
+// ----------------------------------------------------------------------------progress bar

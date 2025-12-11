@@ -192,14 +192,14 @@ main{
     .filter-popup{
         background-color: var(--color-secondary);
         padding: 3rem;
+        display: flex;
+        flex-direction: column;
 
         .pop-up-top{
             .progressbar{
                 display: flex;
                 gap: 1rem;
-                padding: 1rem 2rem;
                 .bar{
-                    border: 0.2px solid var(--color-primary);
                     background-color: var(--color-secondary);
                     width: 15vw;
                     height: 1.5vh;
@@ -210,7 +210,8 @@ main{
             }
             button.close-filters{
                 position: absolute;
-                right: 1rem;
+                right: 3rem;
+                top: 10rem;
             }
         }
         form{
@@ -221,7 +222,7 @@ main{
                 label{}
             }
         }
-        .pop-up-buttons{}
+        .pop-up-bottom{}
     }
 }
 
@@ -233,11 +234,9 @@ main{
 
     @media screen and (min-width:900px) {grid-template-columns: 1fr 1fr;}
     @media screen and (min-width:1200px) {grid-template-columns: 1fr 1fr 1fr;}
-
     h2{
-        display: none;
+        position: absolute;
     }
-
     article{
         display: flex;
         flex-direction: column;
