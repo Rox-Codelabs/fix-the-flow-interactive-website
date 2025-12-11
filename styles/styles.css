@@ -174,10 +174,6 @@ main{
     background-color: var(--color-text-primary);
 }
 
-.filter-section-old{ 
-    display: none;
-}
-
 .filter-section-new{
     h2{}
     .filter-popup{
