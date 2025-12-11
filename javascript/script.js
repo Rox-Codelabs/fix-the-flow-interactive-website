@@ -63,3 +63,75 @@ let words = articleText.textContent.split(' ')
 let shortText = words.slice(0,30).join(' ') + ('...')
 
 articleText.textContent = shortText;
+
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------- popup open
+const openFilters = document.querySelector('.open-filters');
+const popUp = document.querySelector('.filter-popup');
+const closeFilters = document.querySelector('.close-filters');
+
+openFilters.addEventListener('click', function() {
+    popUp.classList.remove('hidden');
+});
+
+closeFilters.addEventListener('click', function() {
+    popUp.classList.add('hidden');
+});
+
+
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------- popup navigatie (heel heel veel help van ai!!!!!!!!!!!!)
+
+const stepOne = document.querySelectorAll('.step-1');
+const stepTwo = document.querySelectorAll('.step-2');
+const stepThree = document.querySelectorAll('.step-3');
+const stepFour = document.querySelectorAll('.step-4');
+const stepFive = document.querySelectorAll('.step-5');
+
+const nextBtn = document.querySelector('.btn-next');
+const previousBtn = document.querySelector('.btn-previous');
+
+let currentStep = 1;
+
+//array 
+const allSteps = [stepOne, stepTwo, stepThree, stepFour, stepFive];
+
+//Stap 2:
+function showStep(stepIndex){
+
+    allSteps.forEach(stepGroup => {
+        stepGroup.forEach(el => {
+            el.classList.add('hidden');
+            el.classList.remove('active-step');
+        });
+    });
+
+    allSteps[stepIndex - 1].forEach(el => {
+            el.classList.remove('hidden');
+            el.classList.add('active-step');
+    });
+
+}
+
+//stap 3:
+
+nextBtn.addEventListener('click', () => {
+    if (currentStep < allSteps.length) {
+        currentStep++;
+        showStep(currentStep);
+    }
+});
+
+previousBtn.addEventListener('click', () => {
+    if (currentStep > 1) {
+        currentStep--;
+        showStep(currentStep);
+    }
+});
+
+showStep(currentStep);
+

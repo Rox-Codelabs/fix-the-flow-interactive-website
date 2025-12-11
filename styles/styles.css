@@ -185,7 +185,7 @@ main{
         width: 65vw;
         aspect-ratio: 4/5;
         margin: auto;
-        .progress-bar{
+        .progressbar{
             display: flex;
             gap: 1rem;
             padding: 1rem 2rem;
@@ -209,11 +209,7 @@ main{
                 label{}
             }
         }
-        button{}
-        .pop-up-1{}
-        .pop-up-2{}
-        .pop-up-3{}
-        .pop-up-4{}
+        .pop-up-buttons{}
     }
 }
 
