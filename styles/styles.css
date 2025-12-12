@@ -220,6 +220,10 @@ main{
         form{
             background-color: var(--color-text-primary);
             border: none;
+            legend{ 
+                color: black;
+                font-size: 1.4rem;
+            }
             fieldset{
                 input{}
                 label{}
