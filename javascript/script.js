@@ -73,7 +73,7 @@ const popUp = document.querySelector('.filter-popup');
 const closeFilters = document.querySelector('.close-filters');
 
 //---
-const backgroundElements = document.querySelectorAll('.hero-section, main, .open-filters');
+const backgroundElements = document.querySelectorAll('.hero-section, main, .open-filters, .tijdelijke-uitleg');
 //---
 
 openFilters.addEventListener('click', function() {
