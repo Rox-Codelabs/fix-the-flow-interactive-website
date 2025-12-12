@@ -189,6 +189,7 @@ main{
 .filter-section{
     position: absolute;
     z-index: 50;
+    padding-top: 20rem;
     .open-filters{
         padding: 1rem;
     }
@@ -197,6 +198,7 @@ main{
         padding: 1rem;
         display: flex;
         flex-direction: column;
+        height: 80vh;
 
         .pop-up-top{
             .progressbar{
@@ -214,22 +216,26 @@ main{
             button.close-filters{
                 position: absolute;
                 right: 3rem;
-                top: 10rem;
+                top: 30rem;
             }
         }
         form{
             background-color: var(--color-text-primary);
             border: none;
+            position: relative;
             legend{ 
                 color: black;
                 font-size: 1.4rem;
             }
             fieldset{
+                position: absolute;
                 input{}
                 label{}
             }
         }
-        .pop-up-bottom{}
+        .pop-up-bottom{
+            margin-top: 10rem;
+        }
     }
 }
 
@@ -456,4 +462,21 @@ p a{
 
 .h1-dtp{
     margin: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+.tijdelijke-uitleg{
+    padding: 3rem;
+    margin: auto;
+    margin-top: 3rem;
+    background-color: var(--color-highlight);
+    width: 65vw;
 }
