@@ -71,6 +71,7 @@ articleText.textContent = shortText;
 const openFilters = document.querySelector('.open-filters');
 const popUp = document.querySelector('.filter-popup');
 const closeFilters = document.querySelector('.close-filters');
+const filterSection = document.querySelector('.filter-section')
 
 //---
 const backgroundElements = document.querySelectorAll('.hero-section, main, .open-filters, .tijdelijke-uitleg');
@@ -79,11 +80,13 @@ const backgroundElements = document.querySelectorAll('.hero-section, main, .open
 openFilters.addEventListener('click', function() {
     popUp.classList.remove('hidden');
     backgroundElements.forEach(el => el.classList.add('blur'));
+    filterSection.style.zIndex = '50';
 });
 
 closeFilters.addEventListener('click', function() {
     popUp.classList.add('hidden');
     backgroundElements.forEach(el => el.classList.remove('blur'));
+    filterSection.style.zIndex = '0';
 });
 
 
@@ -142,5 +145,3 @@ previousBtn.addEventListener('click', () => {
 showStep(currentStep);
 
 
-
-// ----------------------------------------------------------------------------progress bar

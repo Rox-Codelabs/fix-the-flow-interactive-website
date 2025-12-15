@@ -188,7 +188,6 @@ main{
 
 .filter-section{
     position: absolute;
-    z-index: 50;
     margin-left: 9rem;
     .open-filters{
         padding: 1rem;
