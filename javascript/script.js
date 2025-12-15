@@ -167,4 +167,3 @@ previousBtn.addEventListener('click', () => {
 
 showStep(currentStep);
 
-

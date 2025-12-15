@@ -333,8 +333,11 @@ main{
 
         &:hover{
             .article-text h3 mark{
-                background-color: var(--color-font-dark);
+                background: linear-gradient(to left, var(--color-font-dark) 50%, transparent 50%); /*niet van mij */
                 color: var(--color-text-primary);
+                background-size: 200% 100%; /*niet van mij */
+                background-position: -100%; /*niet van mij */
+                transition: background-position 0.9s ease-out; /*niet van mij */
             }
             svg{
                 opacity: 1;
