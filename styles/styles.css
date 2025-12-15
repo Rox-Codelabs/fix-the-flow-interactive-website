@@ -275,20 +275,32 @@ main{
         .article-text{
             padding: 1rem;
             h4{
-                margin-bottom: 2rem;
                 font-family: var(--font-family-sans);
                 letter-spacing: 0.03em;
                 transition: var(--transition-1);
                 line-height: var(--line-hight-m);
+                color: var(--color-font-dark);
                 mark{
                     background-color: inherit;
                     transition: ease-in-out 0.5s;
                 }
                 
             }
+            ul{
+                display: flex;
+                gap: 1.5rem;
+                color: var(--color-font-light);
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            li:first-child{
+                list-style-type: '';
+            }
             p{
                 line-height: var(--line-hight-l);
-                margin-bottom: 2.5rem;
+                font-size: var(--font-size-p-s);
+                color: var(--color-font-semidark);
+                margin-bottom: 1.5rem;
             }
         }
 
@@ -296,9 +308,11 @@ main{
             position: absolute;
             bottom: 0;
             left: 0;
-            padding: 1rem;
+            padding-top: 2rem;
+            padding-left: 1rem;
             text-decoration: none;
-            color: var(--color-text-secondary);
+            color: var(--color-font-light);
+            font-style: italic;
             font-family: var(--font-family-serif);
             font-weight: var(--font-weight-light);
 

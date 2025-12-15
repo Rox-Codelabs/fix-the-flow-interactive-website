@@ -28,6 +28,12 @@
         --color-text-primary: #FFFFFF;
         --color-text-secondary: #000000;
         --color-error: #DB3A1B;
+
+        --color-font-dark: #222222;
+        --color-font-semidark: #333333;
+        --color-font-normal: #444444;
+        --color-font-light: #555555;
+        --color-font-superlight: #999999;
         
         /* Variabelen Typografie */
         --font-family-sans:'Geomanist', 'Helvetica Neue', 'Helvetica', sans-serif;
