@@ -4,19 +4,30 @@
 let openNavButton = document.querySelector('.open-nav');
 let nav = document.querySelector('nav');
 // Stap 2
-openNavButton.addEventListener('click', function(){
+openNavButton.addEventListener('click', function(e){
     // Stap 3
+    e.stopPropagation();
     nav.classList.remove('hidden')
 });
 
-// ---------------------------------Hamburger menu dicht
+// ---------------------------------Hamburger menu dicht + ook als je er naast klikt
 // Stap 1
 let closeNavButton = document.querySelector('.close-nav');
 // Stap 2
-closeNavButton.addEventListener('click', function(){
+closeNavButton.addEventListener('click', function(e){
     //Stap 3
+    e.stopPropagation();
     nav.classList.add('hidden')
 });
+
+nav.addEventListener('click', function(e){
+    e.stopPropagation();
+});
+
+document.addEventListener('click', function(e){
+    nav.classList.add('hidden');
+});
+
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 // ---------------------------------header logo weg na scrollen
