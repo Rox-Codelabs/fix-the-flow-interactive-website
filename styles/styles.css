@@ -283,7 +283,7 @@ main{
 
         .article-text{
             padding: 1rem;
-            h4{
+            h3{
                 font-family: var(--font-family-sans);
                 letter-spacing: 0.03em;
                 transition: var(--transition-1);
@@ -332,7 +332,7 @@ main{
         }
 
         &:hover{
-            .article-text h4 mark{
+            .article-text h3 mark{
                 background-color: var(--color-font-dark);
                 color: var(--color-text-primary);
             }
