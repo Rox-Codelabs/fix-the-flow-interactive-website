@@ -182,6 +182,15 @@ header{
     }
 }
 
+
+.tijdelijke-uitleg{
+    padding: 3rem;
+    margin: auto;
+    margin-top: 3rem;
+    background-color: var(--color-highlight);
+    width: 65vw;
+}
+
 main{
     background-color: var(--color-text-primary);
 }
@@ -316,15 +325,6 @@ main{
             font-family: var(--font-family-serif);
             font-weight: var(--font-weight-light);
 
-            &::after{
-                position: absolute;
-                cursor: pointer;
-                content: "";
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-            }
             svg{
                 transition: ease-in 1s;
                 opacity: 0;
@@ -333,7 +333,7 @@ main{
 
         &:hover{
             .article-text h4 mark{
-                background-color: var(--color-text-secondary);
+                background-color: var(--color-font-dark);
                 color: var(--color-text-primary);
             }
             svg{
@@ -473,29 +473,4 @@ p a{
         width: 50vw;
         background-color: var(--color-highlight);
     }
-}
-
-.btn-back{
-    margin: 3rem;
-}
-
-.h1-dtp{
-    margin: 3rem;
-}
-
-
-
-
-
-
-
-
-
-
-.tijdelijke-uitleg{
-    padding: 3rem;
-    margin: auto;
-    margin-top: 3rem;
-    background-color: var(--color-highlight);
-    width: 65vw;
 }
