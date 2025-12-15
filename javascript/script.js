@@ -69,11 +69,13 @@ window.addEventListener('scroll', function(){
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 // -------------------------------- teskt afkorten 
-let articleText = document.querySelector('.article-text p')
-let words = articleText.textContent.split(' ')
-let shortText = words.slice(0,30).join(' ') + ('...')
+let articleText = document.querySelectorAll('.article-text p');
 
-articleText.textContent = shortText;
+articleText.forEach(articleText => {
+    let words = articleText.textContent.split(' ');
+    let shortText = words.slice(0, 30).join(' ') + '...';
+    articleText.textContent = shortText;
+});
 
 
 
