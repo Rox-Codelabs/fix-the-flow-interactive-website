@@ -256,7 +256,7 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     gap: clamp(0.5rem, 2vw, 2rem);
-    padding: 3rem;
+    padding: 5rem;
     padding-top: 12rem;
 
     @media screen and (min-width:900px) {grid-template-columns: 1fr 1fr;}
@@ -326,21 +326,27 @@ main{
             font-weight: var(--font-weight-light);
 
             svg{
-                transition: ease-in 1s;
+                transition: ease-in 0.5s;
                 opacity: 0;
+                position: absolute;
+                margin-left: -0.5rem;
             }
         }
 
         &:hover{
-            .article-text h3 mark{
-                background: linear-gradient(to left, var(--color-font-dark) 50%, transparent 50%); /*niet van mij */
-                color: var(--color-text-primary);
-                background-size: 200% 100%; /*niet van mij */
-                background-position: -100%; /*niet van mij */
-                transition: background-position 0.9s ease-out; /*niet van mij */
+            .article-text h3 mark{ /*niet van mij */ /*niet van mij */ /*niet van mij */ /*niet van mij */ /*niet van mij */ /*niet van mij */
+                background: linear-gradient(to left, var(--color-font-dark) 50%, transparent 50%); 
+                color: var(--color-text-primary); 
+                background-size: 200% 100%; 
+                background-position: -100%; 
+                transition: background-position 1.5s ease-out; 
+                display: inline; 
+                box-decoration-break: clone;
+                -webkit-box-decoration-break: clone; /* voor Chrome/Safari */
             }
             svg{
                 opacity: 1;
+                margin-left: 0.2rem;
             }
         }
     }
