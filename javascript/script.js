@@ -28,7 +28,6 @@ document.addEventListener('click', function(e){
     nav.classList.add('hidden');
 });
 
-
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 // ---------------------------------header logo weg na scrollen
 // Stap 1
@@ -41,7 +40,6 @@ scrollArea.addEventListener('scroll', function(){
     headerLogo.classList.add('hidden');
 });
 
-
 // ---------------------------------header logo text tonen na scrollen
 //stap 1 
 let headerText = document.querySelector('.logo-text');
@@ -51,7 +49,6 @@ scrollArea.addEventListener('scroll', function(){
     //stap 3
     headerText.classList.remove('hidden');
 });
-
 
 // ---------------------------------Als helemaal omhoog is gescrolled
 // Stap 1 hoeft niet meer
@@ -64,9 +61,6 @@ window.addEventListener('scroll', function(){
     }
 });
 
-
-
-
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 // -------------------------------- teskt afkorten 
 let articleText = document.querySelectorAll('.article-text p');
@@ -76,8 +70,6 @@ articleText.forEach(articleText => {
     let shortText = words.slice(0, 30).join(' ') + '...';
     articleText.textContent = shortText;
 });
-
-
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 // -------------------------------- popup open
@@ -114,10 +106,6 @@ document.addEventListener('click', function(e){
     filterSection.style.zIndex = '0';
 });
 
-
-
-
-
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 // -------------------------------- popup navigatie (heel heel veel help van ai!!!!!!!!!!!!)
 
@@ -150,7 +138,6 @@ function showStep(stepIndex){
             el.classList.remove('hidden');
             el.classList.add('active-step');
     });
-
 }
 
 nextBtn.addEventListener('click', () => {
