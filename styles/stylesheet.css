@@ -29,9 +29,15 @@
         --color-text-secondary: #121212;
         --color-error: #DB3A1B;
 
-        --color-font-dark: #222222;
-        --color-font-normal: #444444;
-        --color-font-light: #555555;
+        --color-text-primary-dark:#F6F4EF;
+        --color-text-primary-normal:#F9F8F4;
+        --color-text-primary-light:#FCFBF8;
+        
+        --color-text-secondary-dark: #222222;
+        --color-text-secondary-normal: #444444;
+        --color-text-secondary-light: #555555;
+
+        
         
         /* Variabelen Typografie */
         --font-family-sans:'Geomanist', 'Helvetica Neue', 'Helvetica', sans-serif;

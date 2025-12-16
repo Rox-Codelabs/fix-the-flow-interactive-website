@@ -79,10 +79,11 @@ const closeFilters = document.querySelector('.close-filters');
 const filterSection = document.querySelector('.filter-section')
 
 //---
-const backgroundElements = document.querySelectorAll('.hero-section, main, .open-filters, .tijdelijke-uitleg');
+const backgroundElements = document.querySelectorAll('.hero-section, main, .open-filters, .introduction-section');
 //---
 
 openFilters.addEventListener('click', function(e) {
+    popUp.classList.add('center');
     popUp.classList.remove('hidden');
     backgroundElements.forEach(el => el.classList.add('blur'));
     filterSection.style.zIndex = '50';
@@ -90,6 +91,7 @@ openFilters.addEventListener('click', function(e) {
 });
 
 closeFilters.addEventListener('click', function(e) {
+    popUp.classList.remove('center');
     popUp.classList.add('hidden');
     backgroundElements.forEach(el => el.classList.remove('blur'));
     filterSection.style.zIndex = '0';
