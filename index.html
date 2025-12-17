@@ -70,14 +70,14 @@
             </section>
 
             <section class="filter-blok">
-                <p>Wil je drect het artikel krijgen waar jij naar op zoek bent en bij jou past beantwoord ??? drie vragen  en zie de resultaten die bij jou passen</p>
+                <p>Wil je drect het artikel krijgen waar jij naar op zoek bent ??? beantwoord drie vragen en vind jou artikel</p>
                 <button class="btn btn-primary open-filters">vul de vragenlijst in</button>
             </section>
 
             <section class="overzicht-blok">
                 <a href="#article-section">
                     <p>Bekijk alle artikelen</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M18 13l-6 6" /><path d="M6 13l6 6" /></svg>
+                    <svg class="btn btn-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M18 13l-6 6" /><path d="M6 13l6 6" /></svg>
                 </a>
             </section>
         </section>
@@ -107,52 +107,52 @@
             </div>
 
             <form>
-                <fieldset aria-label="Selecteer de participatiestap" class="step-2">
+                <fieldset id="processtap" aria-label="Selecteer de participatiestap" class="step-2">
                     <legend>in welke Processtap bevind jou project</legend>
 
-                    <input type="checkbox" id="evalueren" name="Processstep" value="evalueren">
+                    <input type="checkbox" id="evalueren" name="Processstep" value="evalueren" class="filter">
                     <label for="evalueren">Evalueren</label>
 
 
-                    <input type="checkbox" id="articuleren" name="Processstep" value="articuleren">
+                    <input type="checkbox" id="articuleren" name="Processstep" value="articuleren" class="filter">
                     <label for="articuleren">Articuleren</label>
 
-                    <input type="checkbox" id="maken" name="Processstep" value="maken">
+                    <input type="checkbox" id="maken" name="Processstep" value="maken" class="filter">
                     <label for="maken">Maken</label>
 
-                    <input type="checkbox" id="implementatie" name="Processstep" value="implementatie">
+                    <input type="checkbox" id="implementatie" name="Processstep" value="implementatie" class="filter">
                     <label for="implementatie">Implementatie</label>
                 </fieldset>
 
-                <fieldset aria-label="Selecteer het participatieniveau" class="step-3">
+                <fieldset id="participatie" aria-label="Selecteer het participatieniveau" class="step-3">
                     <legend>Welke form van participatie ben je naar opzoek</legend>
 
-                    <input type="checkbox" id="transparency" name="Participationlevel" value="transparency">
+                    <input type="checkbox" id="transparency" name="Participationlevel" value="transparency" class="filter">
                     <label for="transparency">Transparant</label>
 
-                    <input type="checkbox" id="actiegericht" name="Participationlevel" value="actiegericht">
+                    <input type="checkbox" id="actiegericht" name="Participationlevel" value="actiegericht" class="filter">
                     <label for="actiegericht">actiegericht</label>
 
-                    <input type="checkbox" id="leesbaar" name="Participationlevel" value="leesbaar">
+                    <input type="checkbox" id="leesbaar" name="Participationlevel" value="leesbaar" class="filter">
                     <label for="leesbaar">Leesbaar</label>
 
-                    <input type="checkbox" id="relateerbaar" name="Participationlevel" value="relateerbaar">
+                    <input type="checkbox" id="relateerbaar" name="Participationlevel" value="relateerbaar" class="filter">
                     <label for="relateerbaar">Relateerbaar</label>
                         
-                    <input type="checkbox" id="betwistbaar" name="Participationlevel" value="betwistbaar">
+                    <input type="checkbox" id="betwistbaar" name="Participationlevel" value="betwistbaar" class="filter">
                     <label for="betwistbaar">Betwistbaar</label>
                 </fieldset>
 
-                <fieldset aria-label="Selecteer het type uitvoering" class="step-4">
+                <fieldset id="uitvoering" aria-label="Selecteer het type uitvoering" class="step-4">
                     <legend>ben je opzoek naar inspiratie of een uitgewerkte methode</legend>
 
-                    <input type="checkbox" id="conceptfase" name="Execution" value="conceptfase">
+                    <input type="checkbox" id="conceptfase" name="Execution" value="conceptfase" class="filter">
                     <label for="conceptfase">Conceptfase</label>
 
-                    <input type="checkbox" id="experimenteerfase" name="Execution" value="experimenteerfase">
+                    <input type="checkbox" id="experimenteerfase" name="Execution" value="experimenteerfase" class="filter">
                     <label for="experimenteerfase">Experimenteerfase</label>
 
-                    <input type="checkbox" id="methodefase" name="Execution" value="methodefase">
+                    <input type="checkbox" id="methodefase" name="Execution" value="methodefase" class="filter">
                     <label for="methodefase">Methodefase</label>
                 </fieldset>
             </form>
@@ -165,18 +165,25 @@
             <div class="pop-up-bottom">
                 <button class="btn-icon btn-previous">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
+                    Vorige
                 </button>
                 <button class="btn-icon btn-next">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>     
+                    Volgende
                 </button>
             </div>
         </section>
     </section>
 
     <main>
+        <aside>
+            <div class="filter-count">Filters toegepast</div>
+            <button class="btn btn-primary" id="clear-filters">Verwijder filters</button>
+        </aside>
 
         <section id="article-section" class="article-section">
             <h2 class="hidden">Section met artikelen</h2>
+            <div class="article-count">Artikelen</div>
 
             <article id="Open-statistieken-delen"
                 data-processtap="evalueren"

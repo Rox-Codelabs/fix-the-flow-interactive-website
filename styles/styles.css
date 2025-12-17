@@ -278,9 +278,16 @@ header{
         border: 0.5rem solid var(--color-primary);
         
         a{
-            text-decoration: none;
             color: var(--color-text-secondary-dark);
             font-family: var(--font-family-sans);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            svg{
+                height: 2.5rem;
+                width: 2.5rem;
+                margin-top: 1rem;
+            }
         }
     }
 
@@ -326,6 +333,13 @@ header{
                 position: absolute;
                 right: 3rem;
                 top: 3rem;
+                padding: 0.3rem;
+                svg{
+                    transition: 0.2s ease-out; 
+                    &:hover{
+                        transform: rotate(-90deg);
+                    }
+                }
             }
         }
         form{
@@ -343,25 +357,63 @@ header{
             }
         }
         .pop-up-bottom{
-            margin-top: 25rem;
+            margin-top: 22rem;
             display: flex;
             justify-content: space-between;
             padding: 0rem 2.5rem;
+            button{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0.3rem;
+            }
         }
     }
 }
 
+main{
+    display: flex;
+}
+aside{
+    display: none;
+    @media screen and (min-width:1400px) {
+        display: block;
+        margin-top: 13rem;
+        border-right: 3px solid var(--color-text-secondary-dark);
+        border-top: 3px solid var(--color-text-secondary-dark);
+        padding: 2rem;
+    }
+    .filter-count{
+        font-family: var(--font-family-sans);
+        font-size: var(--font-size-h3);
+    }
+    button{
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+}
 .article-section{
     display: grid;
     grid-template-columns: 1fr;
     gap: clamp(0.5rem, 2vw, 2rem);
-    padding: 3rem;
-    margin-top: 10rem;
+    padding: 3rem 3rem;
+    margin-top: 15rem;
+    position: relative;
 
     @media screen and (min-width:900px) {grid-template-columns: 1fr 1fr; padding: 3rem 5rem;}
-    @media screen and (min-width:1200px) {grid-template-columns: 1fr 1fr 1fr; padding: 3rem 9rem;}
+    @media screen and (min-width:1400px) {grid-template-columns: 1fr 1fr 1fr; padding: 3rem 2rem;}
     h2{
         position: absolute;
+    }
+    .article-count{
+        position: absolute;
+        border-top: 3px solid var(--color-text-secondary-dark);
+        width: 100%;
+        padding: 1rem 5rem;
+        margin-top: -2rem;
+        font-family: var(--font-family-serif);
+        font-size: var(--font-size-p-xl);
+        @media screen and (min-width:1400px) { padding:1rem 2rem;}
     }
     article{
         display: flex;

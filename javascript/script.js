@@ -62,16 +62,6 @@ window.addEventListener('scroll', function(){
 });
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
-// -------------------------------- teskt afkorten 
-let articleText = document.querySelectorAll('.article-text p');
-
-articleText.forEach(articleText => {
-    let words = articleText.textContent.split(' ');
-    let shortText = words.slice(0, 30).join(' ') + '...';
-    articleText.textContent = shortText;
-});
-
-//--------------------------------------------------------------------------------------------------------------------------------------------------
 // -------------------------------- popup open
 const openFilters = document.querySelector('.open-filters');
 const popUp = document.querySelector('.filter-popup');
@@ -157,4 +147,43 @@ previousBtn.addEventListener('click', () => {
 });
 
 showStep(currentStep);
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------- filteren snap ik niks van 
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------- teskt afkorten 
+let articleText = document.querySelectorAll('.article-text p');
+
+articleText.forEach(articleText => {
+    let words = articleText.textContent.split(' ');
+    let shortText = words.slice(0, 30).join(' ') + '...';
+    articleText.textContent = shortText;
+});
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------- Article count
+const articleCount = document.querySelector('.article-count')
+
+function updateArticleCount() {
+    const visibleArticles = document.querySelectorAll('article:not(.hidden)');
+    articleCount.textContent = `${visibleArticles.length} artikelen`;
+}
+updateArticleCount();
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------- filter count
+const filters = document.querySelectorAll('.filter');
+const filterCount = document.querySelector('.filter-count');
+
+function updateFilterCount() {
+    const checkedFilters = document.querySelectorAll('.filter:checked');
+    filterCount.textContent = `${checkedFilters.length} Filters toegepast`;
+};
+
+filters.forEach(filter => {
+    filter.addEventListener('change', updateFilterCount);
+});
+
+updateFilterCount();
 
