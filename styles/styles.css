@@ -264,7 +264,7 @@ header{
         background-color: var(--color-highlight);
         padding: 7rem 2rem 0rem;
         max-width: 20rem;
-        p{
+        h2{
             font-size: var(--font-size-p-m);
         }
         
