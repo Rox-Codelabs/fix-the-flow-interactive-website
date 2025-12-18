@@ -284,7 +284,7 @@ header{
         border: 0.5rem solid var(--color-primary);
         
         a{
-            color: var(--color-text-secondary-dark);
+            color: var(--color-primary);
             font-family: var(--font-family-sans);
             display: flex;
             flex-direction: column;
@@ -620,10 +620,6 @@ footer{
 
 /*---------------------------------------------deatail pagina-----------------------------------------------*/
 
-p a{
-    color: var(--color-highlight);
-}
-
 .hero-section-detail-page{
     background-color: var(--color-highlight);
     height: 50vh;
@@ -674,8 +670,9 @@ p a{
 
 .comment-section{
     background-color: var(--color-highlight);
+    margin-top: 12rem;
     height: 50vh; /*dit gaat weg even kijken*/
-    padding: 2rem 0;
+    padding: 8rem 0;
     form{
         margin: auto;
         width: 50vw;
