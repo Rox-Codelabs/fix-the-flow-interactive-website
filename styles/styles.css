@@ -321,6 +321,13 @@ header{
         display: flex;
         flex-direction: column;
         height: 80vh;
+        .p-h1{
+            font-size: var(--font-size-h1);
+            font-family: var(--font-family-heading);
+            color: var(--color-primary);
+            font-weight: var(--font-weight-semibold);
+            margin:0 0 .6em;
+        }
 
         .pop-up-top{
             .progressbar{
