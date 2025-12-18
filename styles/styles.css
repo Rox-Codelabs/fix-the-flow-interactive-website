@@ -16,6 +16,10 @@ body{
     pointer-events: none;
 }
 
+.remove-flow{
+    position: absolute;
+}
+
 .active-step{
     opacity: 1;
     visibility: visible;
@@ -244,7 +248,7 @@ header{
         background-color: var(--color-primary);
         padding: 2rem;
         max-width: 60rem;
-        h2{
+        h3{
             color: var(--color-text-primary-dark);
         }
         hr{
@@ -264,7 +268,7 @@ header{
         background-color: var(--color-highlight);
         padding: 7rem 2rem 0rem;
         max-width: 20rem;
-        h2{
+        h3{
             font-size: var(--font-size-p-m);
         }
         
