@@ -8,6 +8,8 @@ body{
     overflow-x: hidden;
 }
 
+/*classes voor interacties*/
+
 .hidden{
     opacity: 0;
     visibility: hidden;
