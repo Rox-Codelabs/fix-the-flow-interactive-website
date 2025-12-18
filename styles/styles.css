@@ -436,6 +436,7 @@ aside{
         overflow: hidden;
         position: relative;
         margin-bottom: 3rem;
+        text-wrap: balance;
 
         figure{
             overflow: hidden;
