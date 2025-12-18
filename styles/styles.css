@@ -624,27 +624,51 @@ p a{
     color: var(--color-highlight);
 }
 
-.download{
-    .download-svg{
-        color: var(--color-error);
-    }
-    .download-link{
-        font-size: var(--font-size-p-s);
-        color: var(--color-text-secondary);
-    }
-}
-
 .hero-section-detail-page{
     background-color: var(--color-highlight);
-    height: 50vh; /*dit gaat weg even kijken*/
+    height: 50vh;
+    padding: 2rem 5rem;
+    h1{
+        margin: 2rem 5rem 0.2rem 5rem;
+    }
+    ul{
+        display: flex;
+        margin-left: 5rem;
+        gap: 1.5rem;
+        color: var(--color-text-secondary-light);
+        padding-top: 1rem;
+        padding-bottom: 1rem;  
+    }
+    li:first-child{
+        list-style-type: '';
+    }
 }
 
 .main-detail-page{
-    padding: 5rem 15rem;
+    display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
+    h2{
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        max-width: 60rem;
+    }
+    .download{
+        margin-bottom: 3rem;
+        .download-svg{
+            color: var(--color-error);
+        }
+        .download-link{
+            font-size: var(--font-size-p-s);
+            color: var(--color-text-secondary);
+        }
+    }
     .paragraph{
-        padding: 1rem 0;
+        line-height: var(--line-hight-l);
+        font-size: var(--font-size-p-m);
+        max-width: 60rem;
+        padding: 0.7rem 0rem;
     }
 }
 
