@@ -315,6 +315,7 @@ header{
 
 .filter-section{
     position: absolute;
+    z-index: -1;
     .filter-popup{
         background-color: var(--color-secondary);
         padding: 1rem;
@@ -365,8 +366,6 @@ header{
             }
             fieldset{
                 position: absolute;
-                input{}
-                label{}
             }
         }
         .pop-up-bottom{

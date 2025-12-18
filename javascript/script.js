@@ -76,7 +76,7 @@ openFilters.addEventListener('click', function(e) {
     popUp.classList.add('center');
     popUp.classList.remove('hidden');
     backgroundElements.forEach(el => el.classList.add('blur'));
-    filterSection.style.zIndex = '50';
+    filterSection.style.zIndex = '100';
     e.stopPropagation();
 });
 
@@ -84,7 +84,7 @@ closeFilters.addEventListener('click', function(e) {
     popUp.classList.remove('center');
     popUp.classList.add('hidden');
     backgroundElements.forEach(el => el.classList.remove('blur'));
-    filterSection.style.zIndex = '0';
+    filterSection.style.zIndex = '-1';
     e.stopPropagation();
 });
 
@@ -187,3 +187,16 @@ filters.forEach(filter => {
 
 updateFilterCount();
 
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------- filter verwijder knop
+
+const filterButton = document.getElementById('clear-filters');
+
+filterButton.addEventListener('click', () => {
+    const checkedFilters = document.querySelectorAll('.filter:checked');
+    checkedFilters.forEach(filter => {
+        filter.checked = false;
+    });
+    updateFilterCount();
+});
