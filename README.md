@@ -2,7 +2,7 @@
 
 ## Beschrijving
 <img width="600" height="5326" alt="Screenshot 2025-12-18 at 12-58-44 Design for recognition - look and feel" src="https://github.com/user-attachments/assets/8ef0797e-86d1-48cc-9815-181009d53f94" />
-
+Deze sprint richt zich op het leren van JavaScript en het verbeteren van de gebruikerservaring door interactieve elementen toe te voegen aan de website en actief gebruikgemaakt van feedback en feedforward.
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
